@@ -133,18 +133,26 @@ const arr9 = arr8.filter(Boolean);
 let count = arr8.length -  arr9.length;
 console.log(count);
 
+/*Найдите сумму элементов массива между двумя нулями (первым и последним нулями 
+в массиве). Если двух нулей нет в массиве, то выведите ноль. В массиве может быть 
+более 2х нулей. Пример массива: [48,9,0,4,21,2,1,0,8,84,76,8,4,13,2] или 
+[1,8,0,13,76,8,7,0,22,0,2,3,2]*/
 
+const arr10 = [1, 8, 0, 13, 76, 8, 7, 0, 22, 0, 2, 3, 2];
 
-// let count = 0;
+const first = arr10.indexOf(0);
+const last = arr10.lastIndexOf(0);
+let sumNumbers = 0;
 
-// for(i = 0; i < arr8.length; i++){
-//     let arr9 = arr8.filter(item => {
-//         if(item === null){
-//             return true;
-//         }
-//     });
-//     count++
-// }
-// console.log(count);
+for(i = first; i < last; i++){
+
+    if(arr10[first] !== 0 && arr10[last] !== 0){
+        sumNumbers = 0;
+    } else {
+        sumNumbers += arr10[i];
+    }    
+}
+
+console.log(sumNumbers);
 
 
