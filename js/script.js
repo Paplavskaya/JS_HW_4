@@ -88,3 +88,24 @@ arrMix.push('Вася');
 console.log(arrMix);
 console.log(arrMix[arrMix.length - 1]);
 
+/*Запросите у пользователя по очереди числовые значения при помощи prompt и 
+сохраните их в массив. Собирайте числа до теx пор пока пользователь не введет пустое 
+значение. Выведите получившийся массив на экран. Выполните сортировку чисел 
+массива, и выведите его на экран.*/
+
+const arrNumber = [];
+for(;;){
+    let number = prompt('введите число');
+    
+    if(isNaN(number) || number === null || number === ' '){
+        break;
+    }
+    
+    arrNumber.push(+number);
+    arrNumber.sort(function(a, b){
+        return a - b;
+    });    
+}
+
+console.log(arrNumber)
+
