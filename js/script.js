@@ -66,3 +66,17 @@ let arr5 = arr4.filter(item => {
 
 console.log(arr5);
 
+/*Составьте массив дней недели (ПН, ВТ, СР и т.д.). С помощью цикла for выведите все 
+дни недели, а выходные дни выведите жирным.*/
+
+const arrDaysWeek = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
+
+for(i = 0; i < arrDaysWeek.length; i++){
+    if(i <= 4){
+        document.write(`<p>${arrDaysWeek[i]}</p>`);
+    } else {
+        document.write(`<p>${arrDaysWeek[i].bold()}</p>`);
+    }
+}
+
+
