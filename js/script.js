@@ -22,3 +22,27 @@ for(let i = 0; i < arr1.length; i++){
 
 console.log(arrNew1);
 
+/*Создайте новый массив и заполните его значениями от 23 до 57, используя цикл for и 
+while. Выведите оба массива. С помощью цикла for найдите сумму элементов этого 
+массива. Запишите ее в переменную result и выведите.*/
+
+const arr2 = [];
+let result = 0;
+
+for(let i = 23; i <= 57; i++) {
+    arr2.push(i);
+    result += i;
+}
+
+console.log(arr2);
+console.log(result);
+
+let i = 23;
+const arr3 = [];
+
+while(i <= 57){
+    arr3.push(i);
+    i++;
+}
+
+console.log(arr3);
