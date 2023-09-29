@@ -100,7 +100,7 @@ for(;;){
     if(isNaN(number) || number === null || number === ' '){
         break;
     }
-    
+
     arrNumber.push(+number);
     arrNumber.sort(function(a, b){
         return a - b;
@@ -108,4 +108,21 @@ for(;;){
 }
 
 console.log(arrNumber)
+
+/*Переверните массив [12, false, ‘Текст’, 4, 2, -5, 0] (выведите в обратном порядке), 
+используя цикл while и метод reverse.*/
+
+const arr6 = [12, false, 'Текст', 4, 2, -5, 0];
+const arr6Revers = [];
+let ind = arr6.length -1;
+
+while(ind >= 0){
+    arr6Revers.push(arr6[ind]);
+    ind--;
+}
+console.log(arr6Revers);
+
+const arr7 = arr6.reverse();
+console.log(arr7);
+
 
