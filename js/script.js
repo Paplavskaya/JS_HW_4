@@ -79,4 +79,12 @@ for(i = 0; i < arrDaysWeek.length; i++){
     }
 }
 
+/*Создайте массив с произвольными данными. Добавьте в конец массива любой элемент, 
+и получите последний элемент массива, используя свойство length.*/
+
+const arrMix = ['Петя', 125, [1, 2], 'task', 89, -5];
+
+arrMix.push('Вася');
+console.log(arrMix);
+console.log(arrMix[arrMix.length - 1]);
 
